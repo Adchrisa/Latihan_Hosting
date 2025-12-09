@@ -1,9 +1,8 @@
 <?php
-// Konfigurasi Database Hosting InfinityFree (Berdasarkan data Anda)
 $DB_HOST = "sql100.infinityfree.com";        
 $DB_NAME = "if0_40585064_motorworks";        
 $DB_USER = "if0_40585064";                   
-$DB_PASS = "101101038Ab";         // GANTI DENGAN PASSWORD DATABASE ANDA
+$DB_PASS = "101101038Ab"; 
 
 try {
     $pdo = new PDO(
@@ -16,7 +15,6 @@ try {
         ]
     );
 
-    // TIDAK ADA OUTPUT DI SINI JIKA KONEKSI BERHASIL
 
 } catch (PDOException $e) {
     // KONEKSI GAGAL: Mengembalikan HTTP 500 dan respons JSON
